@@ -1,0 +1,30 @@
+{
+  "operatingsystem_support": [    
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "name": "SillentTroll-mongodbmms",
+  "version": "0.0.2",
+  "source": "https://github.com/SillentTroll/mongodbmms.git",
+  "summary": "MongoDB MMS monitoring installation on Ubuntu",
+  "description": "Puppet module for installing and configuring of MMS (MongoDB Management Service) monitoring agent.",
+  "project_page": "https://github.com/SillentTroll/mongodbmms"
+}
