@@ -1,4 +1,4 @@
-mongodb-mms
+mongodbmms
 ===========
 
-Puppet module for configuring MMS (MongoDB Management Service) on your server
+Puppet module for configuring MMS (MongoDB Management Service) monitoring agent on server.
