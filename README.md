@@ -7,4 +7,4 @@ Tests
 ===========
 Test the module using Vagrant.
 
-Set the MMS api key as the environment variable ### MMS_API_KEY
+Set the MMS api key as the environment variable **MMS_API_KEY**
