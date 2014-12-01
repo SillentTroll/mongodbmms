@@ -8,11 +8,11 @@ class mongodbmms (
 ) inherits mongodbmms::params {
 
   exec { 'download-mms':
-    command   => "wget ${download_url}/${deb_filename}",
-    path      => ['/bin', '/usr/bin'],
-    cwd       => '/tmp',
-    logoutput => on_failure,
-    creates   => "/tmp/${deb_filename}",
+    command     => "wget ${download_url}/${deb_filename}",
+    path        => ['/bin', '/usr/bin'],
+    cwd         => '/tmp',
+    logoutput   => on_failure,
+    refreshonly => true,
   }
 
   exec { 'install-mms':
@@ -21,6 +21,7 @@ class mongodbmms (
     cwd       => '/tmp',
     logoutput => on_failure,
     require   => [Exec['download-mms']],
+    creates   => '/usr/bin/mongodb-mms-monitoring-agent',
   }
 
   file { '/etc/mongodb-mms/monitoring-agent.config':
